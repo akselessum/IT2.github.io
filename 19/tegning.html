@@ -10,9 +10,9 @@
 
 </head>
 <body>
-
     <canvas id = "canvas" width="1000" height="1000"></canvas>
-    <input id = "inpFarge">
+    <input type = "color" id = "inpFarge">
+    <input type = "range" min="1" max="100" value="25" id = "inpRadius">
 
 
     <script>
@@ -21,14 +21,19 @@
         const ctx = canvas.getContext("2d");
         canvas.height = window.innerHeight;
         canvas.width = window.innerWidth;
-
+        var inpRadius = document.getElementById("inpRadius");
+        var radius = 25;
 
         canvas.onmousemove = function(event){
             var x = event.clientX;
             var y = event.clientY;
             ctx.beginPath();
-            ctx.arc(x, y, 3, 0, Math.PI * 2);
+            ctx.arc(x, y, radius, 0, Math.PI * 2);
+            ctx.fillStyle=inpFarge.value;
             ctx.fill();
+        };
+        oninput = function() {
+            radius = inpRadius.value;
         };
 
 
