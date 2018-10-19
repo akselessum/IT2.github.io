@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave6</title>
+</head>
+<body>
+
+
+
+
+    <script>
+
+
+
+        var randomTall = Math.floor(Math.random()*100+1);
+        var inpTall;
+
+            while (inpTall !== randomTall) {
+
+                inpTall = Number(prompt("Gjett et tall mellom 1 og 100"));
+
+                if (randomTall < inpTall) {
+                    document.write("Det var for høyt, prøv igjen");
+                } else if (randomTall > inpTall) {
+                    document.write("Det var for lavt, prøv igjen");
+                } else if (randomTall === inpTall) {
+                    document.write("Du gjettet riktig!");
+                }
+            }
+
+    </script>
+
+</body>
+</html>
