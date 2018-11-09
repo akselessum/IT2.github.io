@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+}
+.svar {
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 5px;
+}
