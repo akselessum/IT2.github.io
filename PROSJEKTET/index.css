@@ -14,3 +14,10 @@ main {
     border-radius: 5px;
     padding: 5px;
 }
+.media {
+
+}
+img {
+    height: 300px;
+    width: 500px;
+}
