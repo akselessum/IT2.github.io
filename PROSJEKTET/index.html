@@ -12,41 +12,46 @@
     <main>
 
 
-
         <div class="media"><!--DIV FOR BILDE OG VIDEO-->
-            <img src="bildefiler/brippie%20bread.jpg">
+            <img id="bilde" src="bildefiler/bread.jpg">
         </div>
-
+        <br>
         <div>
             <p id="spm">DETTE BETYR AT DET IKKE FUNKER</p>
         </div>
-
+        <br>
         <div class="wrapper"><!--SVARALTERNATIVENE-->
-            <div class="svar" id="svarA" data-code="KeyA">
+            <div class="svar" data-code="KeyA">
                 <div class="bokstav">A</div>
-                <p>DET ER TRIPPY REDD</p>
+                <p id="svarA">DET ER TRIPPY REDD</p>
             </div>
 
-            <div class="svar" id="svarB" data-code="KeyB">
+            <div class="svar" data-code="KeyB">
                 <div class="bokstav">B</div>
+                <p id="svarB">skrapapa</p>
             </div>
 
-            <div class="svar" id="svarC" data-code="KeyC">
+            <div class="svar" data-code="KeyC">
                 <div class="bokstav">C</div>
+                <p id="svarC">Yeee</p>
             </div>
 
-            <div class="svar" id="svarD" data-code="KeyD">
+            <div class="svar" data-code="KeyD">
                 <div class="bokstav">D</div>
+                <p id="svarD">Giddedygiddedy</p>
             </div>
         </div>
 
-        <div class="ringVenn" data-code="KeyQ"><!--RING EN VENN-->
+        <!--<div class="ringVenn" data-code="KeyQ">
             <div class="bokstav">Q</div>
         </div>
+        -->
 
         <script src="index.js"></script>
 
     </main>
+    <br>
+    <audio autoplay controls><source src="lydfiler/lalala.mp3"><audio>
 
 </body>
 </html>
