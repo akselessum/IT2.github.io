@@ -1,5 +1,6 @@
 body {
-    background-color: bisque;
+    background-color: rgb(173,216,230);
+    overflow-x: hidden;
 }
 .wrapper {
     width: 100%;
@@ -9,31 +10,47 @@ body {
     grid-gap: 5px;
 }
 .svar {
-    border: solid 2px black;
+    border: solid 3px sienna;
     border-radius: 5px;
-    padding: 5px;
+    padding: 2px;
     text-align: center;
-    background-color: lightskyblue;
+    background-color: lightgray;
+    transition: 1.5s; /*Transition på her og spiller. Dette er fordi jeg ville ha fade ut men IKKE inn. Så div'en har en basis
+     av å ha transitions, men selve rød/grønnfargen har null transition. Dette er en workaround fordi transition ikke
+     funker normalt når fargen er basert på "onkeydown/up"*/
 }
 .bokstav {
     font-size: 25px;
-    color: white;
+    color: black;
 }
 .svarAlt{
-    color: #4CAF50;
+    color: black;
+    font-size: 18px;
 }
 #spm {
     text-align: center;
+    font-size: 25px;
 }
 img {
     height: 300px;
-    width: 500px;
+    width: 525px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: solid 10px black;
+    border: solid 7px sienna;
     border-radius: 5px;
 }
-h1 {
-    text-align: center;
+.spiller {
+    background-color: green;
+    transition: 0s;
+}
+.spiller2 {
+    background-color: red;
+    transition: 0s;
+}
+
+audio {
+    width: 40%;
+    margin-left: 29.75%;
+    border: solid 3px sienna;
 }

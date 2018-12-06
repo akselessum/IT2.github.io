@@ -2,56 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vibe</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
 
-    <h1>AKSEL QUIZ OM SHIT</h1>
+    <!---VIKTIG KOMMENTAR
+    DESIGNET ER MENT FOR FIREFOX, CHROME VIRKER LITT TREGERE OG MER CLUNKY, SAMTIDIG SOM ALERT FUNKER ANNERLEDES DER.
+    -->
 
     <main>
-
-
+        <br>
         <div class="media"><!--DIV FOR BILDE OG VIDEO-->
             <img id="bilde" src="bildefiler/bread.jpg">
         </div>
         <br>
         <div>
-            <p id="spm">DETTE BETYR AT DET IKKE FUNKER</p>
+            <p id="spm">Hvilken artist gjemmer seg bak Danny DeVito sitt fjes?</p>
         </div>
         <br>
         <div class="wrapper"><!--SVARALTERNATIVENE-->
             <div class="svar" data-code="KeyA">
                 <div class="bokstav">A</div>
-                <p id="svarA" class="svarAlt">DET ER TRIPPY REDD</p>
+                <p id="svarA" class="svarAlt">Trippie Redd</p>
             </div>
 
             <div class="svar" data-code="KeyB">
                 <div class="bokstav">B</div>
-                <p id="svarB" class="svarAlt">skrapapa</p>
+                <p id="svarB" class="svarAlt">6ix9ine</p>
             </div>
 
             <div class="svar" data-code="KeyC">
                 <div class="bokstav">C</div>
-                <p id="svarC" class="svarAlt">Yeee</p>
+                <p id="svarC" class="svarAlt">Famous Dex</p>
             </div>
 
             <div class="svar" data-code="KeyD">
                 <div class="bokstav">D</div>
-                <p id="svarD" class="svarAlt">Giddedygiddedy</p>
+                <p id="svarD" class="svarAlt">J. Cole</p>
             </div>
         </div>
 
-        <!--<div class="ringVenn" data-code="KeyQ">
-            <div class="bokstav">Q</div>
-        </div>
-        -->
 
-        <script src="index.js"></script>
+
 
     </main>
     <br>
-    <audio autoplay controls><source src="lydfiler/lalala.mp3"><audio>
+    <audio id = "lyd" autoplay controls><source src="lydfiler/lalala.mp3"></audio>
 
+    <script src="index.js"></script>
 </body>
 </html>
