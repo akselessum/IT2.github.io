@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array</title>
+</head>
+<body>
+
+    <!---ul id="bildeListe">
+
+    </ul>
+    <br>
+    <img id="bilde" src="birb.jpg" height="300px" width="500px">
+    <br>
+    <button id="bakoverBilde">Forrige Bilde</button>
+    <button id="foroverBilde">Neste Bilde</button>-->
+
+    <!---<input id="inpVerdi" placeholder="Si no">
+    <button id="inpBtn">Send Inn</button>
+    <br><br>
+    <select id="selectVerdi">
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+        <option value="Kanskje">Kanskje</option>
+        <option value="Muligens">Muligens</option>
+    </select>-->
+
+    <!---<ol id="liste" type="1">
+
+    </ol>-->
+
+    <script>
+
+        /*let handleListe = ["ost", "paprika", "brød", "kaviar"];
+
+        handleListe.unshift("mozzarella");
+        handleListe.pop();
+        handleListe.splice(3, 1, "knekkebrød");
+        console.log(handleListe);
+
+
+        let treListe = ["lønn", "hassel", "bjørk", "eik", "blodlønn", "furu", "gran"];
+        treListe.splice(3, 1);
+        treListe.splice(2, 1, "hengebjørk");
+        treListe.splice(4, 2);
+        treListe.push("fjellbjørk", "dvergbjørk");
+        treListe.sort();
+        console.log(treListe);
+        */
+
+        /*
+        let bildeArray = ["gud.jpg", "birb.jpg", "lightskudd.jpg"];
+        let navnListe = document.querySelector("#bildeListe");
+
+        function sorterTekst(a, b){
+            a = a.toUpperCase();
+            b = b.toUpperCase();
+            return a > b;
+        }
+        bildeArray.sort(sorterTekst);
+
+        for (let bilder of bildeArray){
+            navnListe.innerHTML += `<li> ${bilder} </li>`;
+        }
+
+
+        let bilde = document.querySelector("#bilde");
+        let blaBakover = document.querySelector("#bakoverBilde");
+        let blaFremover = document.querySelector("#foroverBilde");
+        let i = 0;
+
+        blaBakover.onclick = function (){
+            i--;
+            if (i < 0){
+                i = 2;
+            }
+            bilde.src = bildeArray[i];
+        };
+        blaFremover.onclick = function (){
+            i++;
+            if (i > 2){
+                i = 0;
+            }
+            bilde.src = bildeArray[i];
+        }
+        */
+
+
+        /*
+        let tall = [5, 2, 3, 1, 4];
+
+        tall.sort(function (a,b){return a-b});
+        document.write(tall);
+        */
+
+        /*let inpVerdi = document.querySelector("#inpVerdi");
+        let inpBtn = document.querySelector("#inpBtn");
+        let selectVerdi = document.querySelector("#selectVerdi");
+        let tomArray = [];
+
+        inpBtn.onclick = function (){
+            tomArray.push(inpVerdi.value);
+        };
+        selectVerdi.onchange = function (){
+            tomArray.push(selectVerdi.value);
+        };
+        */
+
+        /*
+        let liste = document.querySelector("#liste");
+        let matvarer = ["ost", "brød", "paprika", "kaviar"];
+
+        for (let matvare of matvarer){
+            liste.innerHTML += `<li> ${matvare}</li>`;
+        }
+
+        for (let i = 0; i<matvarer.length; i++){
+            let matvare = matvarer[i];
+            document.write(matvare);
+        }
+        */
+
+
+        /*let bokArray = ["Ringenes Herre", "1984", "Hobbiten", "Der Andre Tier", "Menn som hater kvinner"];
+        let liste = document.querySelector("#liste");
+
+        bokArray.sort(function (a,b){
+            return a>b});
+
+        for (let bok of bokArray){
+            liste.innerHTML += `<li> ${bok} </li>`;
+        }*/
+
+        let temperatur = [3, 4, 5, 6, 5, 5, 6, 4, 4, 5];
+        let dager = 0;
+
+
+        for(let i=0; i<temperatur.length; i++) {
+            if (temperatur[i] < 5) {
+                dager++;
+            }
+        }
+
+
+    </script>
+
+
+</body>
+</html>
