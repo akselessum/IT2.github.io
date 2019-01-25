@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rate en sang</title>
+    <style>
+        body {
+            background:url('danny.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <h3 id="overskrift">Dine favoritt artister! Lever så mange du ønsker</h3>
+
+    <div id = "først">
+    <p id="spm1">Hvem er din favorittartist?</p>
+    <input id="artistNavn" placeholder="Skriv inn her">
+    <br>
+    <p>Hva er heter ditt favorittalbum av dem?</p>
+    <input id="favAlbum" placeholder="Skriv inn her">
+    <br>
+    <p>Paste en link til din favorittsang av dem</p>
+    <input id="sangLink" placeholder="Paste inn her">
+    <br><br>
+    <button id="btnSvar">Lever svaret ditt</button>
+    <br><br>
+    <button id = "ferdig">Trykk her når du har listet alle</button>
+    <br><br>
+
+    </div>
+    <ul id="liste"></ul>
+
+    <script>
+
+
+        let artistNavn = document.getElementById("artistNavn");
+        let favAlbum = document.getElementById("favAlbum");
+        let sangLink = document.getElementById("sangLink");
+        const btnSvar = document.getElementById("btnSvar");
+        const btnFerdig = document.getElementById("ferdig");
+        let spm1 = document.getElementById("spm1");
+        let forst = document.getElementById("først");
+        let overskrift = document.getElementById("overskrift");
+
+        i = 0;
+        let infoArray = [];
+
+        btnSvar.onclick = function (){
+            let infoObjekt = {navn: "", album: "", link: ""};
+
+            infoObjekt.navn = artistNavn.value;
+            infoObjekt.album = favAlbum.value;
+            sangLink.value = sangLink.value.replace("watch?v=", "embed/");
+            infoObjekt.link = sangLink.value;
+
+            document.getElementById("artistNavn").value = ``;
+            document.getElementById("favAlbum").value = ``;
+            document.getElementById("sangLink").value = ``;
+
+            i++;
+            if (i > 0){
+            spm1.innerHTML = "Hva er din neste favoritt artist?";
+            }
+
+            infoArray.push(infoObjekt);
+        };
+
+        let liste = document.getElementById("liste");
+
+        btnFerdig.onclick = function (){
+            forst.style.display = "none";
+            overskrift.innerHTML = "Her er dine valg!";
+            for(let artist of infoArray){
+                liste.innerHTML += `<li>${artist.navn}, med albummet  ${artist.album}, <br> her er din favorittsang av dem <br> <iframe src="${artist.link}"></iframe></li>`;
+            }
+        }
+
+
+
+
+    </script>
+
+
+</body>
+</html>

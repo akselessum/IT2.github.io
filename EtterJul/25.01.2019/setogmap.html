@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <p id="tekst"></p>
+    <br>
+    <ol id="liste"></ol>
+
+
+    <script>
+
+        let tekst = document.getElementById("tekst");
+        let liste = document.getElementById("liste");
+
+        let land = new Set();
+        land.add("Eswatini");
+        land.add("Moldavia");
+        land.add("Bhutan");
+        land.add("Myanmar");
+        land.add("Taiwan");
+
+        land.delete("Myanmar");
+        land.has("Eswatini");
+
+        for (let landet of land){
+            tekst.innerHTML += landet + `<br>`;
+        }
+
+
+        let folk = new Map();
+
+        folk.set("Aksel", 95127750)
+            .set("Henrik", 22222222)
+            .set("Lessum", 22225555)
+            .set("Maja", 81468104)
+            .set("Arne", 16240924);
+
+        folk.delete("Maja");
+        folk.delete("Arne");
+
+        for (let person of folk){
+
+        }
+
+        for (let person of folk){
+            liste.innerHTML += `<li> ${person} </li>`;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
