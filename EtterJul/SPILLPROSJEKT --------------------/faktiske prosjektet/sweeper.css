@@ -1,7 +1,31 @@
-
+#overskrift {
+    position: absolute;
+    font-size: 30px;
+    margin-left: 20%;
+    margin-top: 0;
+}
 #canvas {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    margin-left: 20%;
+    top: 60px;
 }
-
+#vanskelighet {
+    position: absolute;
+    top: 60px;
+    font-size: 18px;
+}
+#tekst {
+    position: absolute;
+    top: 48px;
+    left: 100px;
+}
+#btnStart {
+    position: absolute;
+    font-size: 25px;
+    background-color: white;
+}
+#hjelp {
+    position: absolute;
+    top: 100px;
+    background-color: white;
+}
